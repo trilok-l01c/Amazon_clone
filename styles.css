@@ -1,0 +1,89 @@
+:root {
+    --nav-bg-color: #00122e;
+    --menu-bg-color: #001d3d;
+    --org-color: #fb8500;
+    --main-bg-color: #b7b7a4;
+    --foot-bg-color: #000814;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    color: #fff;
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #b5838d 70%, #fff 100%); 
+}
+
+nav {
+    width: 100vw;
+    height: 60px;
+    background-color: var(--nav-bg-color);
+    position: static; /* To keep it always there, relative to viewport. */
+    top: 0;
+    left: 0;
+    float: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lft-sec-nav {
+    height: 60px;
+    width: 30%;
+    position: absolute; /* To keeps element relative to root element*/
+    left: 0;
+    display: inline-block;
+    margin: 0;
+}
+
+.srch-sec {
+    height: 60px;
+    width: 40%;
+    display: inline-block;
+    position: absolute;
+    left: 30%;
+    margin: 0;
+}
+
+/* To arrange and style right side of nav */
+.rgt-sec-nav {
+    height: 60px;
+    width: 30%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.rgt-span {
+    width: 30%;
+    height: 60px;
+}
+
+/* ### HEADER SEC ### */
+header {
+    width: 100vw;
+    min-height: 600px;
+}
+
+.hero-btn {
+    width: 70px;
+    height: 150px;
+    border: 3px solid #b7b7a4;
+    border-radius: 4px;
+}
+
+/* **** Some Question to clear **** */
+/* - know basic terminologies related to websites */
+/* - ask question slowly and go deeper */
