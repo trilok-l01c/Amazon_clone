@@ -1,9 +1,8 @@
 :root {
-    --nav-bg-color: #00122e;
-    --menu-bg-color: #001d3d;
-    --org-color: #fb8500;
-    --main-bg-color: #b7b7a4;
-    --foot-bg-color: #000814;
+    --lgt-blue: #37475A;
+    --menu-bg-color: #232F3E;
+    --org-color: #FF9900;
+    --nav-bg-color: #131A22;
 }
 
 *,
@@ -20,7 +19,6 @@ html {
 body {
     margin: 0;
     min-height: 100vh;
-    background: linear-gradient(180deg, #b5838d 70%, #fff 100%); 
 }
 
 nav {
@@ -33,6 +31,14 @@ nav {
     float: none;
     padding: 0;
     margin: 0;
+}
+
+.menu {
+    width: 100%;
+    height: 40px;
+    background-color: var(--menu-bg-color);
+    position: relative;
+    top: 0;
 }
 
 .lft-sec-nav {
@@ -75,6 +81,10 @@ nav {
 header {
     width: 100vw;
     min-height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
 }
 
 .hero-btn {
@@ -82,8 +92,7 @@ header {
     height: 150px;
     border: 3px solid #b7b7a4;
     border-radius: 4px;
+    color: #37475A;
+    text-align: center;
+    align-self: center;
 }
-
-/* **** Some Question to clear **** */
-/* - know basic terminologies related to websites */
-/* - ask question slowly and go deeper */
