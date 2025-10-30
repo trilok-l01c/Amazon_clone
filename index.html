@@ -4,36 +4,209 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>A clone web</title>
 </head>
 <body>
-    <!-- *** NAV BAR *** -->
-    <nav>
-        <div class="lft-sec-nav">
-            <icon></icon>
-            <a href="#" id="head-link"><h1 id="nav-title">amazon.in</h1></a>
-            <span class="add-sec"></span>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="logo">
+                <img src="https://via.placeholder.com/100x40/ffffff/131921?text=amazon.in" alt="Amazon.in Logo">
+            </div>
+
+            <div class="search-bar">
+                <select class="search-select">
+                    <option>All</option>
+                    <option>Books</option>
+                    <option>Electronics</option>
+                    <option>Fashion</option>
+                </select>
+                <input type="text" class="search-input" placeholder="Search Amazon.in">
+                <button class="search-button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <div class="header-right">
+                <div class="account">
+                    <span>Hello, sign in</span>
+                    <strong>Account & Lists <i class="fas fa-caret-down"></i></strong>
+                </div>
+                <div class="returns">
+                    <span>Returns</span>
+                    <strong>& Orders</strong>
+                </div>
+                <div class="cart">
+                    <span class="cart-count">0</span>
+                    <i class="fas fa-shopping-cart"></i>
+                    <strong>Cart</strong>
+                </div>
+            </div>
         </div>
-        <div class="srch-sec">
-            <span class="srch-icon"></span>
-            <span class="srch-bar"></span>
-            <span class="srch-flt"></span>
-        </div>
-        <div class="rgt-sec-nav">
-            <span class="a rgt-span">about language</span>
-            <span class="b rgt-span">about offers</span>
-            <span class="c rgt-span">about content</span>
-        </div>
-    </nav>
-    <!-- ### MENU ### -->
-    <div class="menu">
-        
-    </div>
-    <!-- ### HEADER SECTION ### -->
-    <header>
-        <div class="hero-btn">&lt;</div>
-        <div class="hero-btn">&gt;</div>
-        <img src="" alt="hero-img">
+
+        <nav class="nav-bar">
+            <ul class="nav-links">
+                <li><a href="#">Today's Deals</a></li>
+                <li><a href="#">Mobiles</a></li>
+                <li><a href="#">Customer Service</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Amazon Pay</a></li>
+                <li><a href="#">Gift Cards</a></li>
+            </ul>
+        </nav>
     </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-message">
+            You are on amazon.in. You can also shop on Amazon India for millions of products with fast local delivery. <a href="#">Click here to go to amazon.in</a>
+        </div>
+        <div class="hero-banner">
+            Great Indian Festival - Up to 80% Off!
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <h2 class="section-title">Today's Deals</h2>
+        <div class="product-grid">
+            <!-- Product Card 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://via.placeholder.com/300x300/e0e0e0/999999?text=Product+1" alt="Product 1">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">boAt Airdopes 141 Bluetooth TWS Earbuds with 42H Playtime,Low Latency Mode</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="rating-count">(12,345)</span>
+                    </div>
+                    <div class="price">₹999 <del>₹4,499</del></div>
+                    <div class="offer">78% off</div>
+                    <div class="prime-badge">
+                        <img src="https://via.placeholder.com/40x14/007185/ffffff?text=Prime" alt="Prime">
+                        <span>Get it by Tomorrow</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://via.placeholder.com/300x300/e0e0e0/999999?text=Product+2" alt="Product 2">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Samsung Galaxy M34 5G (Midnight Blue, 6GB RAM, 128GB Storage)</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="rating-count">(8,721)</span>
+                    </div>
+                    <div class="price">₹14,999 <del>₹24,999</del></div>
+                    <div class="offer">40% off</div>
+                    <div class="prime-badge">
+                        <img src="https://via.placeholder.com/40x14/007185/ffffff?text=Prime" alt="Prime">
+                        <span>Get it by Tomorrow</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://via.placeholder.com/300x300/e0e0e0/999999?text=Product+3" alt="Product 3">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Puma Men's Regular Fit T-Shirt (Pack of 2)</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="rating-count">(5,432)</span>
+                    </div>
+                    <div class="price">₹599 <del>₹1,599</del></div>
+                    <div class="offer">63% off</div>
+                    <div class="prime-badge">
+                        <img src="https://via.placeholder.com/40x14/007185/ffffff?text=Prime" alt="Prime">
+                        <span>Get it by Tomorrow</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://via.placeholder.com/300x300/e0e0e0/999999?text=Product+4" alt="Product 4">
+                </div>
+                <div class="product-info">
+                    <div class="product-title">Amazon Basics HDMI Cable, 4K, 1.8m</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="rating-count">(21,890)</span>
+                    </div>
+                    <div class="price">₹189 <del>₹599</del></div>
+                    <div class="offer">68% off</div>
+                    <div class="prime-badge">
+                        <img src="https://via.placeholder.com/40x14/007185/ffffff?text=Prime" alt="Prime">
+                        <span>Get it by Tomorrow</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more product cards as needed -->
+        </div>
+    </section>
+
+    <!-- Back to Top -->
+    <div class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+        Back to top
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-links">
+            <div class="footer-column">
+                <h3>Get to Know Us</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press Releases</a></li>
+                    <li><a href="#">Amazon Science</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Connect with Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Make Money with Us</h3>
+                <ul>
+                    <li><a href="#">Sell on Amazon</a></li>
+                    <li><a href="#">Become an Affiliate</a></li>
+                    <li><a href="#">Fulfilment by Amazon</a></li>
+                    <li><a href="#">Advertise Your Products</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Let Us Help You</h3>
+                <ul>
+                    <li><a href="#">Your Account</a></li>
+                    <li><a href="#">Returns Centre</a></li>
+                    <li><a href="#">100% Purchase Protection</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-logo">
+                <img src="https://via.placeholder.com/76x30/ffffff/232f3e?text=amazon" alt="Amazon Logo">
+            </div>
+            <p>© 1996-2025, Amazon.com, Inc. or its affiliates</p>
+        </div>
+    </footer>
 </body>
 </html>
